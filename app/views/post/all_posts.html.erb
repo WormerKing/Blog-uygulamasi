@@ -1,0 +1,17 @@
+<div class="conteiner">
+	<% @all.each do |all|%>
+		<%= link_to "#{all.title}",post_path(all.id)%>
+		<div class="details">
+			<%= all.details%>
+		</div>
+		<div class="date">
+			<%= all.date%>
+		</div>
+	<%end%>
+</div>
+
+<style>
+	* {
+		text-align: center;
+	}
+</style>
